@@ -1,0 +1,17 @@
+{
+  "name": "24001122-synrgy7-bin-dashboard-ch5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/BintangRP/24001122-synrgy7-bin-dashboard-ch5.git",
+  "author": "BINTANG RIZQI PASHA <87906435+BintangRP@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0",
+    "sequelize": "^6.37.3"
+  }
+}
