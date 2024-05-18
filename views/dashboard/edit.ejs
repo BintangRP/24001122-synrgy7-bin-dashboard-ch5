@@ -1,0 +1,27 @@
+<%- include('../layouts/header') %>
+<body>
+	<div class="container">
+		<h1 class="mt-5">Edit car</h1>
+		<form action="/admin/cars/<%= car.id %>?_method=PUT" method="post" enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="nama">Nama Mobil</label>
+				<input type="text" class="form-control" id="nama" name="nama" value="<%= car.nama %>" required />
+			</div>
+
+			<div class="form-group">
+				<label for="harga">Harga</label>
+				<input type="number" class="form-control" id="harga" name="harga" value="<%= car.harga %>" required />
+			</div>
+
+			<div class="form-group">
+				<img src="/assets/uploads/<%= car.image %>" alt="<%= car.nama %>" height="100px" />
+			</div>
+			<div class="form-group">
+				<label for="image">Image</label>
+				<input type="file" class="form-control-file" id="image" name="image" />
+			</div>
+			<button type="submit" class="btn btn-primary">Update Data Mobil</button>
+		</form>
+	</div>
+</body>
+<%- include('../layouts/footer') %>
